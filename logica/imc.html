@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 - Lógica de Programação</title>
+</head>
+<body>
+    <script>
+
+        function showtxt(phrase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(phrase);
+            breakline();
+
+        }
+
+        function breakline() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br><br>");
+        }
+
+        function calcImc(height, weight) /* Essa função recebe os valores de altura e peso para calcular o IMC*/ {
+            
+            var imc = weight / (height * height); /* Essa var calcula o imc*/
+            return Math.round(imc);
+        }
+
+        var infoName = prompt("Digite o seu nome:");
+        var infoHeight = prompt(infoName + ", informe a sua altura: ");
+        var infoWeight = prompt(infoName + ", informe o seu peso: ");
+        var resultImc = calcImc(infoHeight, infoWeight);
+
+        showtxt(infoName + ", o seu IMC é: " + resultImc);
+
+    </script>
+</body>
+</html>
