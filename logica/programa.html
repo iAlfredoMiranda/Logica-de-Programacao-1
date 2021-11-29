@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2 - Comunique-se com o Usuário</title>
+    <title>Aula 2,3 - Lógica de Programação</title>
 </head>
 <body>
     <script>
-        document.write("Alfredo nasceu em:" + (2021-25) + "<br>")
-        document.write("Flavio nasceu em:" + (2021-(39+5)) + "<br>")
-        document.write("Joaquim nasceu em:" + (2021-(20+5)) + "<br>")
-        document.write("Barney nasceu em:" + (2021-(40+5)) + "<br>")
 
+        var ano = 2021;
+        document.write("Alfredo tem: " + (ano - 1996) + " anos <br>");
+        document.write("Flávio tem: " + (ano - 1977) + " anos <br>");
+        document.write("Joaquim tem: " + (ano - 1994) + " anos <br>");
+        document.write("Barney tem: " + (ano - 1975) + " anos <br><br>");
+
+        var idadeAlfredo = 25
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+        document.write("A média das idades é: " + Math.round(media))
+
+        var nome = "Alfredo";
+        document.write("<br> A idade de " + nome + " é: " + idadeAlfredo)
+
+
+        var idadeLinda = 12;
+        var idadeGuaraciara = 15;
+        var idadePerola = 13;
+        var totalIdades = idadeLinda + idadePerola + idadeGuaraciara;
+        media = totalIdades/3;
+        document.write("<br> A média de idade da Linda, Guaraciara e Pérola é: " + Math.round(media))
     </script>
 </body>
 </html>

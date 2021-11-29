@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade aula 3 - Calculo do consumo de combustivel</title>
+</head>
+<body>
+    <h2>Gasolina ou Álcool?</h2>
+    <h3>Indo um pouco Além - Calculando o custo  e o consumo da Gasolina:</h3>
+    <p>Com a gasolina custando R$6,237/l, quanto você vai gastar para colocar 40 litros de gasolina no tanque?
+        E se com 40 litros de gasolina o carro roda 480 Km, qual é o consumo de gasolina do carro?</p>
+
+    <!-- Inicio dos Cálculos da Gasolina-->
+    
+    <script>
+        var tanque = 40; /*litros no tanque */
+        var caminhoComGasolina = 480; /*40 litros de gasolina roda 480 Km */
+        var consumoDeGasolina = caminhoComGasolina / tanque;
+        var custoGasolina = 6.237; /*preço da Gasolina em SP*/
+        var totalGasolina = custoGasolina * tanque;
+
+        document.write("Você gasta R$" + Math.round(totalGasolina*100) / 100 + " para colocar 40 litros de Gasolina.<br>")
+        document.write("O consumo de Gasolina é de: " + consumoDeGasolina + "Km/L. <br>")
+    </script>
+
+    <!-- Fim dos Cálculos da Gasolina-->
+
+        <h3>Calculando o custo e o consumo do Álcool:</h3>
+        <p>Com o álcool custando R$4,974/l, quanto você vai gastar para colocar 40 litros de álcool no tanque? 
+            E se com 40 litros de álcool o carro roda 300 Km, qual é o consumo de álcool do carro?</p>
+
+    <!-- Inicio dos Cálculos do Álcool-->
+
+    <script>
+        var caminhoComAlcool = 300; /*40 litros de álcool roda 300 Km */
+        var custoAlcool = 4.974; /*preço do Álcool em SP*/
+        var totalAlcool = custoAlcool * tanque;
+        var consumoDeAlcool = caminhoComAlcool / tanque;
+        document.write("Você gasta R$" + totalAlcool + " para colocar 40 litros de álcool.")
+        document.write("O consumo de Alcool é de: " + consumoDeAlcool + "Km/L.<br>")
+    </script>
+
+    <!-- Fim dos Cálculos do Álcool-->
+
+</body>
+</html>
