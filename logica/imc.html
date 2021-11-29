@@ -34,22 +34,41 @@
 
         showtxt(infoName + ", o seu IMC é: " + resultImc);
 
-        /* Inicio If para magreza */
+        /* Inicio If /else if para magreza */
 
-        if(resultImc < 18.5 ){
+        if(resultImc < 18.5 && resultImc >=17 ){
 
-            showtxt("Abaixo do peso");
+            showtxt("Magreza leve");
 
-        } 
+        } else if(resultImc < 17 && resultImc > 16 ){
+
+                showtxt("Magreza moderada");
+            
+            } else if(resultImc < 16){
+                showtxt("Magreza grave");
+            }
 
         /* Fim If para magreza */
         /* Inicio If para acima do peso */
 
-        if(resultImc > 35 ){
+        if(resultImc > 25 && resultImc <=30 ){
 
             showtxt("Acima do peso");
 
-        } 
+        } else if(resultImc < 35 && resultImc > 30 ){
+
+            showtxt("Obesidade de Grau I");
+
+             } else if(resultImc < 40 && resultImc >=35 ){
+
+                    showtxt("Obesidade de Grau II - servera");
+
+                } else if(resultImc >=40){
+
+                    showtxt("Obesidade de Grau III - mórbida");
+
+                } 
+        
 
         /* Fim If para acima do peso */
         /* Inicio If para acima do peso */
