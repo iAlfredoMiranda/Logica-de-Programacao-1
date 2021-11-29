@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Crie suas funcionalidades </title>
+</head>
+<body>
+    <h1>Atividade - O problema das gerações</h1>
+    <h2>Chegada dos Português:</h2>
+    <script>
+
+        function mostra(frase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(frase);
+            pulaLinha();
+
+        }
+
+        function pulaLinha() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br><br>");
+        }
+
+        var anoChegadaDosPortuguês = 1500;
+        var mediaIdade = 28;
+        var anoAtual = 2021;
+        
+        var anosDesdaChegadaDosPortuguês = anoAtual - anoChegadaDosPortuguês;
+        mostra("Fazem " + anosDesdaChegadaDosPortuguês + " anos desde a chegada dos Português ao Brasil.");
+
+        var nGeracoesDesdosPortugues = ((anoAtual - anoChegadaDosPortuguês)/mediaIdade)
+        mostra("São no total: " + Math.round(nGeracoesDesdosPortugues) + " gerações, aproximadamente desde então.");
+
+    </script>
+
+    <h2>Fim da escravidão:</h2>
+
+    <script>
+
+        function mostra(frase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(frase);
+            pulaLinha();
+
+        }
+
+        function pulaLinha() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br><br>");
+        }
+
+        var anoFimdaEscravidao = 1888;
+        
+        var anosDesdoFimdaEscravidao = anoAtual - anoFimdaEscravidao;
+        mostra("Fazem " + anosDesdoFimdaEscravidao + " anos desde o Fim da Escravidão no Brasil.");
+
+        var nGeracoesDesdoFimdaEscravidao  = ((anoAtual - anoFimdaEscravidao)/mediaIdade)
+        mostra("São no total: " + Math.round(nGeracoesDesdoFimdaEscravidao) + " gerações, aproximadamente desde então.");
+
+    </script>
+
+</body>
+</html>

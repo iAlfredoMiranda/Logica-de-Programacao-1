@@ -9,29 +9,28 @@
 <body>
     <script>
 
+        function showtxt(phrase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(phrase);
+            breakline();
+
+        }
+
+        function breakline() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br><br>");
+        }
+
         var ano = 2021;
-        document.write("Alfredo tem: " + (ano - 1996) + " anos <br>");
-        document.write("Flávio tem: " + (ano - 1977) + " anos <br>");
-        document.write("Joaquim tem: " + (ano - 1994) + " anos <br>");
-        document.write("Barney tem: " + (ano - 1975) + " anos <br><br>");
 
-        var idadeAlfredo = 25
-        var idadeFlavio = 39;
-        var idadeJoaquim = 20;
-        var idadeBarney = 41;
-        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
-        document.write("A média das idades é: " + Math.round(media))
+        showtxt("Alfredo tem: " + (ano - 1996) + " anos.");
 
-        var nome = "Alfredo";
-        document.write("<br> A idade de " + nome + " é: " + idadeAlfredo)
+        showtxt("Flávio tem: " + (ano - 1977) + " anos.");
 
+        showtxt("Joaquim tem: " + (ano - 1994) + " anos.");
 
-        var idadeLinda = 12;
-        var idadeGuaraciara = 15;
-        var idadePerola = 13;
-        var totalIdades = idadeLinda + idadePerola + idadeGuaraciara;
-        media = totalIdades/3;
-        document.write("<br> A média de idade da Linda, Guaraciara e Pérola é: " + Math.round(media))
+        showtxt("Barney tem: " + (ano - 1975) + " anos.");
+
     </script>
 </body>
 </html>
