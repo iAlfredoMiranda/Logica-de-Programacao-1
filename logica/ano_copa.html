@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - Lógica de Programação</title>
+</head>
+<body>
+    <script>
+
+        function showtxt(phrase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(phrase);
+            breakline();
+
+        }
+
+        function breakline() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br><br>");
+        }
+
+        var anoCopa = 1930;
+        var anoAtual = parseInt(prompt("Digite o ano Atual: "));
+        
+        while(anoCopa <= anoAtual){
+
+        showtxt("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+
+        }
+        
+
+
+    </script>
+</body>
+</html>

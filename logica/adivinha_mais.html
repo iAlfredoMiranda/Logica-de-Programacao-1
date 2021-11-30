@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - exercicio - Lógica de Programação</title>
+</head>
+<body>
+    
+    <input type="text" value="">
+    <button>Compare com o meu segredo</button>
+
+    <script>
+        function sorteia() {
+
+            return Math.round(Math.random() * 10);
+            
+        }
+
+        function sorteiaNumeros(quantidade) {
+            
+            var segredos = [];
+
+            var n = 1;
+
+            while (n <= quantidade) {
+
+                var numAleatorio = sorteia();
+
+                    if (numAleatorio !== 0) {
+                    
+
+                       var achou = false;
+
+                        for(var posicao = 0; posicao < segredos.length; posicao++){
+
+                            if (segredos[posicao] == numAleatorio) {
+
+                               achou = true;
+                              break;
+                        
+                          }
+                      }
+
+                          if (achou == false) {
+                    
+                            segredos.push(numAleatorio);
+                               n++;
+                         }                
+                     }
+
+            }
+
+            return segredos;
+
+        }
+
+        var segredos = sorteiaNumeros(5);
+        console.log(segredos);
+
+        function verifica() {
+
+            var achou = false;
+
+            for(var posicao = 0; posicao < segredos.length; posicao++)
+
+            if (input.value == segredos[posicao]) {
+
+            alert("Você Acerto!");
+            segredos = sorteiaNumeros(5);
+            console.log(segredos);
+            achou = true;
+            break;
+
+            } 
+            if(achou == false){
+                  alert("Você Errou!");
+            }
+            
+            input.value = "";
+            input.focus();
+        }
+
+        var input = document.querySelector("input");
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+
+    </script>
+</body>
+</html>

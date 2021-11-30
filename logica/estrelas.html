@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - exercicio - Lógica de Programação</title>
+</head>
+<body>
+    <script>
+
+        function showtxt(phrase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
+            
+            document.write(phrase);
+            breakline();
+
+        }
+
+        function breakline() /* Essa função pula 2 linha utiliando <br><br>*/ {
+
+           document.write("<br>");
+        }        
+
+        for (var line = 1; line <=3 ; line++) {
+
+            for (var coluna = 1; coluna <= 10; coluna++) {
+                document.write("*");
+            }
+            breakline();
+        }
+
+        showtxt("Fim");
+
+    </script>
+</body>
+</html>

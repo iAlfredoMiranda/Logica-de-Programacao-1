@@ -1,38 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 5, 6 - Lógica de Programação</title>
-</head>
-<body>
-    <script>
+<meta charset="UTF-8">
 
-        function showtxt(phrase) /* recebe paramentos de textos para exibir um document.write e chama a função breakline*/ {
-            
-            document.write(phrase);
-            breakline();
+<script>
 
-        }
+    function pulaLinha() {
 
-        function breakline() /* Essa função pula 2 linha utiliando <br><br>*/ {
+        document.write("<br>");
+        document.write("<br>");
+}
 
-           document.write("<br><br>");
-        }
+    function mostra(frase) {
 
-        var nPensado = Math.round(Math.random()*10);
-        console.log(nPensado)
-        var chute = parseInt(prompt("Chute um número: "));
+        document.write(frase);
+        pulaLinha();
+}
 
-        if(chute == nPensado){
+    var numeroPensado = Math.round(Math.random() * 10);
+    var tentativas = 1
+    while(tentativas <=3) {
 
-            showtxt("Seu palpite foi: " + chute +"<br>");
-            showtxt("Você acertou! Número sorteado foi: " + nPensado);
-        } else{
-                showtxt("Seu palpite foi: " + chute +"<br>");
-                showtxt("Você errou! Número sorteado foi: " + nPensado);
-            } 
-    </script>
-</body>
-</html>
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Você acertou! <br> O número sorteado era " + numeroPensado);
+        
+        break;
+
+    } else {
+
+        mostra("Você errou!");
+        console.log(numeroPensado);
+    }
+
+    tentativas++;
+
+}
+
+    mostra("Fim");
+
+</script>
