@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Seu número para ganhar na Lotéria | SisLoto</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Ganhando na Lotéria! - SisLoto</h1>
+        <h2>Gerador de números para as Principais Lotérias da Caixa</h2>
+        <p>Um sistema que gera números para lotéria igual ao sistema da Caixa.</p>
+    </header>
+    <main>
+        <h3>Gerador de Número:</h3>
+        <!--Inicio da MegaSena-->
+
+        <section id="secMegaSena">
+            <header id="headerMega">
+                <h2 style="color: #209869;">Mega-Sena</h2>
+                <p>Serão gerados 6 números (de 1 - 25), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
+            </header>
+            <div id="geradorMega" class="generator">
+                <!--Aqui vai ter o gerador de números da MegaSena-->
+                <label for="generatedMega">Seu número Gerado:</label><br>
+                <input type="text" id="generatedMega" name="generatedMega"><br>
+                <input type="button" onclick="" value="Gerar números vencedores!">
+            </div>
+            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=cross&utm_campaign=loteriasonline&utm_term=mega#/mega-sena">clicar aqui</a></p></footer>
+        </section>
+
+        <!--Final da MegaSena-->
+        <!--Inicio da LotoFacil-->
+
+        <section id="secLotoFacil">
+            <header id="headerLotoFacil">
+                <h2 style="color: #930089;">LotoFacil</h2>
+                <p>Serão gerados 20 números (de 1 - 60), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
+            </header>
+            <div id="geradorLotoFacil" class="generator">
+                <!--Aqui vai ter o gerador de números da LotoFacil-->
+                <label for="generatedLotoFacil">Seu número Gerado:</label><br>
+                <input type="text" id="generatedLotoFacil" name="generatedLotoFacil"><br>
+                <input type="button" onclick="" value="Gerar números vencedores!">
+            </div>
+            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/lotofacil">clicar aqui</a></p></footer>
+        </section>
+
+        <!--Final da LotoFacil-->
+        <!--Inicio da QUINA-->
+
+        <section id="secQuina">
+            <header id="headerQuina">
+                <h2 style="color: #260085;">Quina</h2>
+                <p>Serão gerados 5 números (de 1 - 80), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
+            </header>
+            <div id="geradorQuina" class="generator">
+                <!--Aqui vai ter o gerador de números da QUINA-->
+                <div id="geradorLotoFacil" class="generator">
+                    <!--Aqui vai ter o gerador de números da LotoFacil-->
+                    <label for="generatedQuina">Seu número Gerado:</label><br>
+                    <input type="text" id="generatedQuina" name="generatedQuina"><br>
+                    <input type="button" onclick="" value="Gerar números vencedores!">
+                </div>
+            </div>
+            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/quina">clicar aqui</a></p></footer>
+        </section>
+
+        <!--Final da QUINA-->
+        <!--Inicio da LOTOMANIA-->
+
+        <section id="secLotoMania">
+            <header id="headerLotoMania">
+            <h2 style="color: #f78100;">LotoMania</h2>
+            <p>Serão gerados 20 números (de 00 - 99), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
+            </header>
+            <div id="geradorLotoMania" class="generator">
+                <!--Aqui vai ter o gerador de números da LOTOMANIA-->
+                <div id="geradorLotoFacil" class="generator">
+                    <!--Aqui vai ter o gerador de números da LotoFacil-->
+                    <label for="generatedLotoMania">Seu número Gerado:</label><br>
+                    <input type="text" id="generatedLotoMania" name="generatedLotoMania"><br>
+                    <input type="button" onclick="" value="Gerar números vencedores!">
+                </div>
+            </div>
+            <footer><p> Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/lotomania">clicar aqui</a></p></footer>
+        </section>
+    </main>
+</body>
+</html>
