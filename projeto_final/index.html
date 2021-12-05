@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/generatorMegaSena.js"></script>
     <title>Seu número para ganhar na Lotéria | SisLoto</title>
 </head>
 <body>
@@ -20,13 +21,13 @@
         <section id="secMegaSena">
             <header id="headerMega">
                 <h2 style="color: #209869;">Mega-Sena</h2>
-                <p>Serão gerados 6 números (de 1 - 25), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
+                <p>Serão gerados 6 números (de 1 - 60), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorMega" class="generator">
                 <!--Aqui vai ter o gerador de números da MegaSena-->
                 <label for="generatedMega">Seu número Gerado:</label><br>
                 <input type="text" id="generatedMega" name="generatedMega"><br>
-                <input type="button" onclick="" value="Gerar números vencedores!">
+                <input id="btn_generatedMega" type="button" onclick="sorteiaNumeros()" value="Gerar números vencedores!">
             </div>
             <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=cross&utm_campaign=loteriasonline&utm_term=mega#/mega-sena">clicar aqui</a></p></footer>
         </section>
