@@ -34,5 +34,6 @@
 
             }
 
-            alert("Os números da sorte são: " + megaSena)
+                var resultMega = megaSena;
+                document.getElementById("inputgeneratedMega").value = resultMega; //Now you get the js variable inside your form element
         }
