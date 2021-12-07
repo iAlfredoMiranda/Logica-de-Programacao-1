@@ -1,14 +1,14 @@
         function sorteia() {
 
-            return Math.round(Math.random() * 60);
+            return Math.round(Math.random() * 25);
             
         }
 
-        function sorteiaNumerosMega() {
+        function sorteiaNumerosLotoFacil() {
             let megaSena = []
             let numero = 1
 
-            while(numero <= 6) {
+            while(numero <= 20) {
 
                 let numeroAleatorio = sorteia()
                 let achou = false
