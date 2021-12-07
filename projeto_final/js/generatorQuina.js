@@ -34,5 +34,6 @@
 
             }
 
-            alert("Os números da sorte são: " + megaSena)
+            var resultMega = megaSena;
+            document.getElementById("inputgeneratedQuina").value = resultMega;
         }
