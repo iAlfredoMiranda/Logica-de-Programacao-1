@@ -35,5 +35,5 @@
             }
 
                 var resultMega = megaSena;
-                document.getElementById("inputgeneratedMega").value = resultMega; //Now you get the js variable inside your form element
+                document.getElementById("inputgeneratedMega").value = resultMega;
         }

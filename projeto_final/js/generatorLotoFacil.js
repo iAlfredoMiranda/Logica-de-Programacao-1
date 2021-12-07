@@ -5,7 +5,7 @@
         }
 
         function sorteiaNumerosLotoFacil() {
-            let megaSena = []
+            let lotofacil = []
             let numero = 1
 
             while(numero <= 20) {
@@ -15,9 +15,9 @@
 
                 if(numeroAleatorio !== 0 && numeroAleatorio <= 60) {
 
-                    for(posicao = 0; posicao < megaSena.length; posicao++) {
+                    for(posicao = 0; posicao < lotofacil.length; posicao++) {
 
-                        if(megaSena[posicao] == numeroAleatorio) {
+                        if(lotofacil[posicao] == numeroAleatorio) {
 
                             achou = true
                             break
@@ -26,7 +26,7 @@
 
                     if(achou == false) {
 
-                        megaSena.push(numeroAleatorio)
+                        lotofacil.push(numeroAleatorio)
                         numero++
                     }
 
@@ -34,5 +34,6 @@
 
             }
 
-            alert("Os números da sorte são: " + megaSena)
+            var resultLotofacil = lotofacil;
+                document.getElementById("inputgeneratedLotoFacil").value = resultLotofacil;
         }
