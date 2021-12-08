@@ -23,17 +23,11 @@ h3{
     font-size: 2.7rem;
     color: rgb(0,102,179);
 }
-footer{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-bottom: 1px solid;
-    border-color: #912F56;
-}
 #header{
     padding-top: 2%;
     padding-bottom: 5%;
     background: rgb(0,102,179);
-    background: linear-gradient(43deg, rgba(0,102,179,1) 0%, rgba(0,175,185,1) 100%);
+    background: linear-gradient(43deg, rgba(0,102,179,1) 35%, rgba(0,175,185,1) 100%);
     color: #F2F4F3;
     text-align: center;
 
@@ -53,6 +47,14 @@ footer{
     text-shadow: 1px 1px 1px #000000;
     
 }
+#imgBanner{
+    position:absolute;
+    float:right;
+    bottom: 54%;
+    max-width: 100%;
+    margin-left: 30%;
+}
+/* CSS for section with inputs generators*/
 .generator{
     padding-top: 2%;
     
@@ -73,21 +75,22 @@ input{
     border-left-style: hidden;
     border-bottom-style: groove;
 
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
-#inputgeneratedMega{
-    border-color: #209869;
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #45c0ae;
 }
-#inputgeneratedQuina{
-    border-color: #260085;
+footer a:hover{
+    font-weight: bold;
+    color: #45c0ae;
+    text-decoration: underline;
 }
-#inputgeneratedLotomania{
-    padding: 10px 30px;
-    width: 45%;
-    border-color: #f79c31;
-}
-#inputgeneratedLotoFacil{
-    padding: 10px 30px;
-    width: 43%;
-    border-color: #930089;
+/* Footer website*/
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid;
+    border-color: #912F56;
 }

@@ -7,6 +7,7 @@
     <!--Inicio CSS-->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bets.css">
 
     <!--Fim CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +18,10 @@
 </head>
 <body>
     <header id="header">
-        <h1>Ganhando na Lotéria! - SisLoto</h1>
+        <h1 id="titleP">Ganhando na Lotéria! - SisLoto</h1>
         <h2>Gerador de números para as Principais Lotérias da Caixa</h2>
         <p>Um sistema que gera números para lotéria igual ao sistema da Caixa.</p>
+        <img id="imgBanner" src="img/loterias_MegaSena_Lotofacil_Quina_LotoMania.webp" alt="bilhete de apostas Loterias Caixa">
     </header>
     <main>
         <h3>Gerador de Número:</h3>
@@ -36,7 +38,7 @@
                 <input type="text" class="inputText" id="inputgeneratedMega" name="generatedMega">
                 <input id="btn_generatedMega" type="button" onclick="sorteiaNumerosMega()" value="Gerar números vencedores!">
             </div>
-            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/?utm_source=site_loterias&utm_medium=cross&utm_campaign=loteriasonline&utm_term=mega#/mega-sena">clicar aqui</a></p></footer>
+            <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/megasena">clicar aqui!</a></p></footer>
         </section>
 
         <!--Final da MegaSena-->
@@ -44,7 +46,7 @@
 
         <section id="secLotoFacil">
             <header id="headerLotoFacil">
-                <h2 style="color: #930089;">LotoFacil</h2>
+                <h2 style="color: #930089;">Lotofácil</h2>
                 <p>Serão gerados 20 números (de 1 - 60), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorLotoFacil" class="generator">
@@ -53,7 +55,7 @@
                 <input type="text" id="inputgeneratedLotoFacil" class="inputText" name="generatedLotoFacil">
                 <input id="btn_generatedLotoFacil" type="button" onclick="sorteiaNumerosLotoFacil()" value="Gerar números vencedores!">
             </div>
-            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/lotofacil">clicar aqui</a></p></footer>
+            <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil">clicar aqui!</a></p></footer>
         </section>
 
         <!--Final da LotoFacil-->
@@ -73,7 +75,7 @@
                     <input id="btn_generatedQuina" type="button" onclick="sorteiaNumerosQuina()" value="Gerar números vencedores!">
                 </div>
             </div>
-            <footer><p>Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/quina">clicar aqui</a></p></footer>
+            <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/quina">clicar aqui!</a></p></footer>
         </section>
 
         <!--Final da QUINA-->
@@ -93,7 +95,7 @@
                     <input id="btn_generatedLotomania" type="button" onclick="sorteiaNumerosLotomania()" value="Gerar números vencedores!">
                 </div>
             </div>
-            <footer><p> Para apostar basta <a href="https://www.loteriasonline.caixa.gov.br/silce-web/#/lotomania">clicar aqui</a></p></footer>
+            <footer><p> Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/lotomania">clicar aqui!</a></p></footer>
         </section>
     </main>
     
