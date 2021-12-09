@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+    /* Header */
+   #header > h1  {
+		font-size: 2.5em;
+	}
+    
+	img {
+		display: none
+	}
+    /*content main*/
+    main {
+		width: auto;
+        padding-right: 3%;
+        padding-left: 3%;
+	}
+    main > h3{
+        text-align: center;
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    input{
+        padding: 10px 15px;
+        margin-right: 5px;
+        width: 90%;
+    }
+    /* CSS Bets*/
+    #inputgeneratedLotomania, #inputgeneratedLotoFacil{
+        width: 90%;
+    }
+    #btn_generatedMega, #btn_generatedQuina, #btn_generatedLotomania, #btn_generatedLotoFacil{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: auto;
+    
+    }
+}

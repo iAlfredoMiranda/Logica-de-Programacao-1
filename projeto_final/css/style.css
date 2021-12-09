@@ -77,20 +77,15 @@ input{
 
     font-size: 1.2em;
 }
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #45c0ae;
-}
-footer a:hover{
-    font-weight: bold;
-    color: #45c0ae;
-    text-decoration: underline;
-}
 /* Footer website*/
 footer{
     padding-top: 2%;
     padding-bottom: 2%;
     border-bottom: 1px solid;
     border-color: #912F56;
+}
+#footerSite{
+    color: #b60000;
+    text-align: center;
+
 }
