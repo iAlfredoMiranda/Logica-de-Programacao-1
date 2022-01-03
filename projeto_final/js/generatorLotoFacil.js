@@ -13,7 +13,7 @@
                 let numeroAleatorio = sorteia()
                 let achou = false
 
-                if(numeroAleatorio !== 0 && numeroAleatorio <= 60) {
+                if(numeroAleatorio !== 0 && numeroAleatorio <= 25) {
 
                     for(posicao = 0; posicao < lotofacil.length; posicao++) {
 
