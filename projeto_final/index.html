@@ -26,7 +26,7 @@
     </header>
     <main>
         <h3>Gerador de Número:</h3>
-        <!--Inicio da MegaSena-->
+        <!--Start MegaSena-->
 
         <section id="secMegaSena">
             <header id="headerMega">
@@ -34,16 +34,17 @@
                 <p>Serão gerados 6 números (de 1 - 60), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorMega" class="generator">
-                <!--Aqui vai ter o gerador de números da MegaSena-->
+                <!-- MegaSena's Generator is here -->
                 <label for="generatedMega">Seu número Gerado:</label><br>
                 <input type="text" disabled="disabled" class="inputText" id="inputgeneratedMega" name="generatedMega">
+                <!-- This btn call de func JS for generate MegaSena's numbers -->
                 <input id="btn_generatedMega" type="button" onclick="sorteiaNumerosMega()" value="Gerar números vencedores!">
             </div>
             <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/megasena">clicar aqui!</a></p></footer>
         </section>
 
-        <!--Final da MegaSena-->
-        <!--Inicio da LotoFacil-->
+        <!--END MegaSena-->
+        <!--Start LotoFacil-->
 
         <section id="secLotoFacil">
             <header id="headerLotoFacil">
@@ -51,16 +52,17 @@
                 <p>Serão gerados 20 números (de 1 - 60), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorLotoFacil" class="generator">
-                <!--Aqui vai ter o gerador de números da LotoFacil-->
+                <!-- LotoFacil's Generator is here -->
                 <label for="generatedLotoFacil">Seu número Gerado:</label><br>
                 <input type="text" disabled="disabled" id="inputgeneratedLotoFacil" class="inputText" name="generatedLotoFacil">
+                <!-- This btn call de func JS for generate LotoFacil's numbers -->
                 <input id="btn_generatedLotoFacil" type="button" onclick="sorteiaNumerosLotoFacil()" value="Gerar números vencedores!">
             </div>
             <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/lotofacil">clicar aqui!</a></p></footer>
         </section>
 
-        <!--Final da LotoFacil-->
-        <!--Inicio da QUINA-->
+        <!--END LotoFacil-->
+        <!--Start QUINA-->
 
         <section id="secQuina">
             <header id="headerQuina">
@@ -68,19 +70,19 @@
                 <p>Serão gerados 5 números (de 1 - 80), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorQuina" class="generator">
-                <!--Aqui vai ter o gerador de números da QUINA-->
                 <div id="geradorQuina" class="generator">
-                    <!--Aqui vai ter o gerador de números da LotoFacil-->
+                    <!-- QUINA's Generator is here -->
                     <label for="generatedQuina">Seu número Gerado:</label><br>
                     <input type="text" disabled="disabled" id="inputgeneratedQuina" class="inputText" name="generatedQuina">
+                    <!-- This btn call de func JS for generate QUINA's numbers -->
                     <input id="btn_generatedQuina" type="button" onclick="sorteiaNumerosQuina()" value="Gerar números vencedores!">
                 </div>
             </div>
             <footer><p>Para apostar basta <a href="http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/quina">clicar aqui!</a></p></footer>
         </section>
 
-        <!--Final da QUINA-->
-        <!--Inicio da LOTOMANIA-->
+        <!--END QUINA-->
+        <!--Start LOTOMANIA-->
 
         <section id="secLotoMania">
             <header id="headerLotoMania">
@@ -88,11 +90,11 @@
             <p>Serão gerados 20 números (de 00 - 99), excluindo as últimas combinações sorteas para aumentar as suas chances de ganhar!</p>
             </header>
             <div id="geradorLotoMania" class="generator">
-                <!--Aqui vai ter o gerador de números da LOTOMANIA-->
                 <div id="geradorLotomania" class="generator">
-                    <!--Aqui vai ter o gerador de números da LotoFacil-->
+                    <!-- LOTOMANIA's Generator is here -->
                     <label for="generatedLotomania">Seu número Gerado:</label><br>
                     <input type="text" disabled="disabled" id="inputgeneratedLotomania" class="inputText" name="generatedLotomania">
+                    <!-- This btn call de func JS for generate LOTOMANIA's numbers -->
                     <input id="btn_generatedLotomania" type="button" onclick="sorteiaNumerosLotomania()" value="Gerar números vencedores!">
                 </div>
             </div>
@@ -102,13 +104,13 @@
     <footer id="footerSite">
         developed by Alfredo Miranda &copy;
     </footer>
-    <!--Inicio JS-->
+    <!--Start JS-->
 
     <script src="js/generatorMegaSena.js"></script>
     <script src="js/generatorLotoFacil.js"></script>
     <script src="js/generatorQuina.js"></script>
     <script src="js/generatorLotomania.js"></script>
 
-    <!--Fim JS-->
+    <!--END JS-->
 </body>
 </html>
