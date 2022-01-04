@@ -84,8 +84,11 @@ footer{
     border-bottom: 1px solid;
     border-color: #912F56;
 }
-#footerSite{
+#footerSite {
     color: #b60000;
     text-align: center;
-
+}
+#footerSite a{
+    color: #b60000;
+    text-decoration: none;
 }
