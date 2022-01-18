@@ -4,13 +4,13 @@
             return Math.round(Math.random() * 25);
             
         }
-        /* This func return 20 random numbers of 1 to 25 and no repeat */
+        /* This func return 15 random numbers of 1 to 25 and no repeat */
         function sorteiaNumerosLotoFacil() {
             let lotofacil = []
             let numero = 1
 
-        /* this "while" generate 20 numbenrs*/
-            while(numero <= 20) {
+        /* this "while" generate 15 numbenrs*/
+            while(numero <= 15) {
 
                 let numeroAleatorio = sorteia()
                 let achou = false
@@ -28,7 +28,7 @@
                             break
                         }
                     }
-                    /* If no generate 20 numbers, do "while" again and generate more 1 number */
+                    /* If no generate 15 numbers, do "while" again and generate more 1 number */
                     if(achou == false) {
 
                         lotofacil.push(numeroAleatorio)
